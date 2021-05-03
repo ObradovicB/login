@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col offset-11">
+      <button type="button" class="btn btn-link" (click)="logout()">
+        Logout
+      </button>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Username:</th>
+            <th>Name:</th>
+            <th>Surname:</th>
+            <th>Type:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>
+              {{ user.username }}
+            </td>
+            <td>
+              {{ user.name }}
+            </td>
+            <td>
+              {{ user.surname }}
+            </td>
+            <td>
+              {{ user.type }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

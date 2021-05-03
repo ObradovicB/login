@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col offset-11">
+      <button type="button" class="btn btn-link" (click)="logout()">
+        Logout
+      </button>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Name:</th>
+            <th>Pages:</th>
+            <th>Price:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of myBooks">
+            <td>
+              {{ book.name }}
+            </td>
+            <td>
+              {{ book.pages }}
+            </td>
+            <td>
+              {{ book.price }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
